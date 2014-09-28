@@ -1,4 +1,4 @@
-nav {display: inline;}
+nav ul{display: inline;}
 nav li a{text-decoration: none;}
 body {background-color: #FFE066; text-color: #4C4C4C;}
 h1 {color: rgb(123,47,130);}
