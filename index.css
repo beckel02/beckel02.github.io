@@ -13,9 +13,9 @@ padding: 15px;
 nav li a {
  text-decoration: none;
  }
-header a {
-text-decoration: none;
-}
+ nav li a:hover {
+ background-color: gray;
+ }
 a: hover {
 background-color: grey;
 }
