@@ -13,7 +13,7 @@ nav li a {
 header a {
 text-decoration: none;
 }
-nav li: hover {
+a: hover {
 background-color: grey;
 }
 body {
