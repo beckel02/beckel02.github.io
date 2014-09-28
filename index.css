@@ -3,6 +3,7 @@ nav li a{ display:block; padding: 0.25em 0 0.25em 0.5em; text-decoration: none; 
 header a{text-decoration: none;}
 nav ul ul{display:none;}
 nav ul.level1 li.more: hover ul.level2{display: block;}
+nav li: hover{background-color: grey;}
 body {background-color: #FFE066; text-color: #4C4C4C;}
 h1 {color: rgb(123,47,130);}
 h2 {color: #5C8533;}
