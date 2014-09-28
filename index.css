@@ -1,7 +1,28 @@
-nav li{display: inline;}
-nav li a{ display:block; padding: 0.25em 0 0.25em 0.5em; text-decoration: none; width: 5.5em;}
-header a{text-decoration: none;}
-nav li: hover{background-color: grey;}
-body {background-color: #FFE066; text-color: #4C4C4C;}
-h1 {color: rgb(123,47,130);}
-h2 {color: #5C8533;}
+nav {
+margin-top: 0 px;
+margin-bottom:0px;
+background-color: #CC3300;
+}
+nav li {
+display: inline;
+}
+nav li a {
+ display:block;
+ text-decoration: none;
+ }
+header a {
+text-decoration: none;
+}
+nav li: hover {
+background-color: grey;
+}
+body {
+background-color: #FFE066; 
+text-color: #4C4C4C;
+}
+h1 {
+color: rgb(123,47,130);
+}
+h2 {
+color: #5C8533;
+}
