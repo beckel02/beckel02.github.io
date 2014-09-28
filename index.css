@@ -1,7 +1,9 @@
 nav {
-margin-top: 0 px;
-margin-bottom:0px;
+margin-top: 20 px;
+margin-bottom:20px;
 background-color: #CC3300;
+padding: 20px;
+font-size: 12pt
 }
 nav li {
 display: inline;
