@@ -3,11 +3,11 @@ margin-top: 0 px;
 margin-bottom:0px;
 background-color: #CC3300;
 }
-li {
+nav li {
 display: inline;
 }
 nav li a {
- display:block;
+ display: block;
  text-decoration: none;
  }
 header a {
