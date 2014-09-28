@@ -8,6 +8,7 @@ height: 30px;
 }
 nav li {
 display: inline;
+padding: 15px;
 }
 nav li a {
  text-decoration: none;
