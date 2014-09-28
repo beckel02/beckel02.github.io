@@ -7,7 +7,6 @@ nav li {
 display: inline;
 }
 nav li a {
- display: block;
  text-decoration: none;
  }
 header a {
