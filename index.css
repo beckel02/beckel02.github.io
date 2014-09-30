@@ -48,12 +48,12 @@ background-color: #FFE066;
 text-color: #4C4C4C;
 }
 h1 {
-color: rgb(123,47,130);
+color: #5C8533;
 }
 h2 {
 color: #5C8533;
 }
-article {
+section {
 float:left;
 position: relative;
 top:35px;
@@ -62,4 +62,17 @@ width: 15%;
 overflow: auto;
 border: 5px solid black;
 padding: 10px;
+}
+aside {
+float: right;
+position: relative;
+top: 100px;
+left:-40px;
+width:75%;
+overflow: auto;
+}
+img.zebra {
+float: center;
+top: 0px;
+left: 100px;
 }
