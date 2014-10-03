@@ -1,0 +1,24 @@
+<html>
+<style>
+main {
+position: relative;
+top:20px;
+left:100px;
+}
+</style>
+<body>
+<h1> To do list</h1>
+<main id="new">
+<ul>
+</ul>
+</main>
+<input type="text">
+<button onclick="addTask();">Add</button>
+<script type="text/javascript">
+addTask = function() {
+newli = document.createElement("li");
+m = document.body.querySelector("#new");
+m.appendChild(newli);
+}
+</body>
+</html>
