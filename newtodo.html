@@ -12,17 +12,25 @@
 <label for="new">New item</label>
 <input id="new" type="text" value="enter text here">
 <button onclick="addTask();">Add</button>
+<select id="priority">
+<option>High</option>
+<option>Medium</option>
+<option>Low</option>
+</select>
 <script type="text/javascript">
 addTask = function() {
-m = document.body.querySelector("#new");
-l =document.body.querySelector("#list");
-li =document.createElement("li");
+m = document.body.querySelector("#new")
+l =document.body.querySelector("#list")
+li =document.createElement("li")
 cb =document.createElement("input")
 cb.type= "checkbox"
 t =document.createTextNode(m.value)
 li.appendChild(cb)
 li.appendChild(t)
-l.appendChild(li);
+l.appendChild(li)
+p =document.body.querySelector('#priority")
+li.document.innerHTML= fontColor: p.value
+
 }
 </script>
 </aside>
