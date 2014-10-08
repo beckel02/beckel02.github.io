@@ -10,7 +10,7 @@ overflow: auto;
 aside {
 position: relative;
 top: 100px;
-left: 500px;
+left: 450px;
 }
 h1 {
 position: relative;
@@ -18,4 +18,19 @@ left: 500px;
 }
 main ul {
 list-style: none;
+}
+body {
+background-color: lightblue;
+}
+.done {
+text-decoration: line-through;
+}
+.high {
+color: red;
+}
+.medium {
+color: orange;
+}
+.low {
+color: green;
 }

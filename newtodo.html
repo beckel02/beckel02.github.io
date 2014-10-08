@@ -13,23 +13,26 @@
 <input id="new" type="text" value="enter text here">
 <button onclick="addTask();">Add</button>
 <select id="priority">
-<option>High</option>
-<option>Medium</option>
-<option>Low</option>
+<option class="high">High</option>
+<option class="medium">Medium</option>
+<option class="low">Low</option>
 </select>
 <script type="text/javascript">
+doneTask = function() {
+this.parentNode.className="done"
+}
 addTask = function() {
-m = document.body.querySelector("#new")
-l =document.body.querySelector("#list")
-li =document.createElement("li")
-cb =document.createElement("input")
-cb.type= "checkbox"
-t =document.createTextNode(m.value)
-li.appendChild(cb)
-li.appendChild(t)
-l.appendChild(li)
-p =document.body.querySelector('#priority")
-li.document.innerHTML= fontColor: p.value
+m = document.body.querySelector("#new");
+l =document.body.querySelector("#list");
+li =document.createElement("li");
+cb =document.createElement("input");
+cb.type= "checkbox";
+t =document.createTextNode(m.value);
+li.appendChild(cb);
+li.appendChild(t);
+l.appendChild(li);
+cb.onclick = doneTask;
+p =document.select.querySelector("#priority");
 
 }
 </script>
