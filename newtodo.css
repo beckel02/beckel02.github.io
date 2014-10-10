@@ -2,7 +2,7 @@ main {
 position: relative;
 top: 20px;
 left: 350px;
-background-color: violet;
+background-color: #0099CC;
 width: 500px;
 height:300px;
 overflow: auto;
@@ -20,7 +20,7 @@ main ul {
 list-style: none;
 }
 body {
-background-color: lightblue;
+background-color: #66DDAA;
 }
 .done {
 text-decoration: line-through;
