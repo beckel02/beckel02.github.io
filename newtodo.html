@@ -10,7 +10,7 @@
 </main>
 <aside>
 <label for="new">New item</label>
-<input id="new" type="text" value="enter text here">
+<input id="new" type="text" value="Enter text here">
 <button onclick="addTask();">Add</button>
 <select id="priority">
 <option class="high">High</option>
@@ -34,6 +34,21 @@ l.appendChild(li);
 cb.onclick = doneTask;
 p =document.querySelector("#priority").value;
 li.className=p;
+}
+saveList = function()
+{
+newList=[]
+theList= document.querySelectorAll('li')
+for(i=0; i, theList.length; i++) {
+newList.push(theList[i].innerText)
+}
+}
+doneTask =function() {
+if (this.checked) {
+this.parentNode.className ="done"
+} else {
+this.parentNode.className= ""
+}
 }
 </script>
 </aside>
