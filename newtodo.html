@@ -17,10 +17,9 @@
 <option class="medium">Medium</option>
 <option class="low">Low</option>
 </select>
+
 <script type="text/javascript">
-doneTask = function() {
-this.parentNode.className="done"
-}
+
 addTask = function() {
 m = document.body.querySelector("#new");
 l =document.body.querySelector("#list");
@@ -34,22 +33,49 @@ l.appendChild(li);
 cb.onclick = doneTask;
 p =document.querySelector("#priority").value;
 li.className=p;
+localSave()
 }
-saveList = function()
-{
-newList=[]
-theList= document.querySelectorAll('li')
-for(i=0; i, theList.length; i++) {
-newList.push(theList[i].innerText)
+
+localSave = function() {
+res = []
+var i;
+allEntries = document.querySelectorAll('li')
+for(i=0; i< allEntries.length; i++) {
+if (allEntries[i].className !="done") {
+res.push(allEntries[i].innerText);
 }
 }
+localStorage.setItem("todoDatabase",JSON.stringify(res))
+}
+
 doneTask =function() {
 if (this.checked) {
-this.parentNode.className ="done"
+this.parentNode.classList.add("done");
 } else {
-this.parentNode.className= ""
+this.parentNode.classList.remove("done");
+}
+localSave()
+}
+
+restoreList= function() {
+allEntries = JSON.pars(localStorage.getItem("todoDatabase"));
+for(i=0; i<allEntries.length; i++) {
+//Add a li to our page using allEntries[i] as the text of the task
+m = document.body.querySelector("#new");
+l =document.body.querySelector("#list");
+li =document.createElement("li");
+cb =document.createElement("input");
+cb.type= "checkbox";
+t =document.createTextNode(m.value);
+li.appendChild(cb);
+li.appendChild(t);
+l.appendChild(li);
+cb.onclick = doneTask;
+p =document.querySelector("#priority").value;
+li.className=p
 }
 }
+
 </script>
 </aside>
 </body>
