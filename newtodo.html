@@ -37,11 +37,11 @@ localSave()
 }
 
 localSave = function() {
-res = []
+var res = []
 var i;
 allEntries = document.querySelectorAll('li')
 for(i=0; i< allEntries.length; i++) {
-if (allEntries[i].className !="done") {
+if (! allEntries[i].classList.contains("done")) {
 res.push(allEntries[i].innerText);
 }
 }
@@ -58,7 +58,8 @@ localSave()
 }
 
 restoreList= function() {
-allEntries = JSON.pars(localStorage.getItem("todoDatabase"));
+allEntries = JSON.pars(localStorage.getItem("todoDatabase"))
+taskList= document.queryselector('#list');
 for(i=0; i<allEntries.length; i++) {
 //Add a li to our page using allEntries[i] as the text of the task
 m = document.body.querySelector("#new");
