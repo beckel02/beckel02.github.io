@@ -58,14 +58,14 @@ localSave()
 }
 
 restoreList= function() {
-allEntries = JSON.pars(localStorage.getItem("todoDatabase"))
-taskList= document.queryselector('#list');
-for(i=0; i<allEntries.length; i++) {
-//Add a li to our page using allEntries[i] as the text of the task
+allEntries = JSON.parse(localStorage.getItem("todoDatabase"))
 m = document.body.querySelector("#new");
 l =document.body.querySelector("#list");
 li =document.createElement("li");
 cb =document.createElement("input");
+
+for(i=0; i<allEntries.length; i++) {
+taskList = document.querySelector("#list");
 cb.type= "checkbox";
 t =document.createTextNode(m.value);
 li.appendChild(cb);
@@ -76,6 +76,8 @@ p =document.querySelector("#priority").value;
 li.className=p
 }
 }
+
+
 
 </script>
 </aside>
