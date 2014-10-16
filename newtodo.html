@@ -64,16 +64,16 @@ for(i=0; i< allEntries.length; i++) {
 li =document.createElement("li");
 cb =document.createElement("input");
 cb.type= "checkbox";
-t =document.createTextNode(m.value);
+t =document.createTextNode(taskList.value);
 li.appendChild(cb);
 li.appendChild(t);
 taskList.appendChild(li);
-li.className=p;
+
 
 }
 }
 
-
+window.onload = restoreList;
 
 </script>
 </aside>
