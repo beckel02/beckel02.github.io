@@ -64,12 +64,12 @@ for(i=0; i< allEntries.length; i++) {
 li =document.createElement("li");
 cb =document.createElement("input");
 cb.type= "checkbox";
-t =document.createTextNode(taskList.value);
+t =document.createTextNode(allEntries[i]);
 li.appendChild(cb);
 li.appendChild(t);
 taskList.appendChild(li);
 
-
+ 
 }
 }
 
