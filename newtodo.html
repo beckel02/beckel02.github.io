@@ -59,20 +59,15 @@ localSave()
 
 restoreList= function() {
 allEntries = JSON.parse(localStorage.getItem("todoDatabase"))
-m = document.body.querySelector("#new");
-l =document.body.querySelector("#list");
+taskList = document.querySelector("#list");
+for(i=0; i< allEntries.length; i++) {
 li =document.createElement("li");
 cb =document.createElement("input");
-
-for(i=0; i<allEntries.length; i++) {
-taskList = document.querySelector("#list");
 cb.type= "checkbox";
-t =document.createTextNode(m.value);
+t =document.createTextNode(allEntries[i].value);
 li.appendChild(cb);
 li.appendChild(t);
 l.appendChild(li);
-cb.onclick = doneTask;
-p =document.querySelector("#priority").value;
 li.className=p
 }
 }
