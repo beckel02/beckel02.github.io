@@ -21,6 +21,7 @@
 <script type="text/javascript">
 
 addTask = function() {
+var li;
 m = document.body.querySelector("#new");
 l =document.body.querySelector("#list");
 li =document.createElement("li");
@@ -33,6 +34,8 @@ l.appendChild(li);
 cb.onclick = doneTask;
 p =document.querySelector("#priority").value;
 li.className=p;
+cb.onlick= doneTask;
+
 localSave()
 }
 
@@ -60,19 +63,23 @@ localSave()
 restoreList= function() {
 allEntries = JSON.parse(localStorage.getItem("todoDatabase"))
 taskList = document.querySelector("#list");
+p =document.querySelector("#priority").value;
+m = document.body.querySelector("#new");
+taskText= m.value;
 for(i=0; i< allEntries.length; i++) {
 li =document.createElement("li");
 cb =document.createElement("input");
 cb.type= "checkbox";
+cb.onclick= doneTask;
 t =document.createTextNode(allEntries[i]);
 li.appendChild(cb);
 li.appendChild(t);
 taskList.appendChild(li);
+li.className= p;
 
  
 }
 }
-
 window.onload = restoreList;
 
 </script>
